@@ -76,5 +76,8 @@ TC_005_test_validation_Title
     Element Should Be Enabled              id=username 
     #Element Should Be Disabled            id=password 
     Element Should Be Visible              id=password                   
-    Close Window                                
+    Close Window    
+    
+TC_006_display_simple_text
+    Log To Console                         Hello Github                               
     
