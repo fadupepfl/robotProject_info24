@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20201221 19:33:12.023" generator="Robot 3.2.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/ouajdi/dev/workspaces/eclipse-workspace/ValidationProject" id="s1" name="ValidationProject">
+<suite source="/Users/ouajdi/dev/workspaces/eclipse-workspace/ValidationProject/testCases" id="s1-s1" name="testCases">
+<suite source="/Users/ouajdi/dev/workspaces/eclipse-workspace/ValidationProject/testCases/validationTestSuite.robot" id="s1-s1-s1" name="validationTestSuite">
+<test id="s1-s1-s1-t1" name="TC_005_test_validation_Title">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url3}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201221 19:33:12.274" level="INFO">Opening browser 'gc' to base url 'https://login.salesforce.com/?locale=fr-ca'.</msg>
+<status status="PASS" endtime="20201221 19:33:15.100" starttime="20201221 19:33:12.273"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20201221 19:33:15.243" starttime="20201221 19:33:15.101"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2s</arg>
+</arguments>
+<status status="PASS" endtime="20201221 19:33:15.248" starttime="20201221 19:33:15.243"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Connexion | Salesforce</arg>
+</arguments>
+<msg timestamp="20201221 19:33:15.459" level="INFO">Page title is 'Connexion | Salesforce'.</msg>
+<status status="PASS" endtime="20201221 19:33:15.459" starttime="20201221 19:33:15.249"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20201221 19:33:16.221" starttime="20201221 19:33:15.460"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<msg timestamp="20201221 19:33:16.658" level="INFO">Element 'id=password' is displayed.</msg>
+<status status="PASS" endtime="20201221 19:33:16.659" starttime="20201221 19:33:16.222"></status>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" endtime="20201221 19:33:16.921" starttime="20201221 19:33:16.660"></status>
+</kw>
+<status status="PASS" endtime="20201221 19:33:16.922" critical="yes" starttime="20201221 19:33:12.271"></status>
+</test>
+<status status="PASS" endtime="20201221 19:33:16.924" starttime="20201221 19:33:12.093"></status>
+</suite>
+<status status="PASS" endtime="20201221 19:33:16.928" starttime="20201221 19:33:12.090"></status>
+</suite>
+<status status="PASS" endtime="20201221 19:33:16.932" starttime="20201221 19:33:12.052"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ValidationProject" pass="1">ValidationProject</stat>
+<stat fail="0" id="s1-s1" name="testCases" pass="1">ValidationProject.testCases</stat>
+<stat fail="0" id="s1-s1-s1" name="validationTestSuite" pass="1">ValidationProject.testCases.validationTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
